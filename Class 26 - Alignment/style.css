@@ -1,0 +1,43 @@
+:root {
+    --primary: #90EE90;
+    --bg-primary: #536a79;
+    --bg-secondary: #36454F;
+}
+
+body {
+    color: var(--primary);
+    background: var(--bg-primary);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 150px);
+
+    /* justify-items, align-items, - justify-content, align-content, */
+    /* align-self, justify-self, - justify is row axis, align is column axis */
+    place-items: stretch stretch;
+    align-content: space-between;
+    justify-content: space-between;
+
+    border: 10px solid;
+    min-height: 350px;
+    padding: 0.5em;
+}
+
+.grid-item {
+    display: grid;
+    place-content: center;
+    color: var(--bg-secondary);
+    background: var(--primary);
+    padding: 0.5em;
+}
+
+.grid-item5 {
+    justify-self: center;
+    align-self: center;
+}

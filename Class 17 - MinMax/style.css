@@ -1,0 +1,33 @@
+:root {
+    --primary: #90EE90;
+    --bg-primary: #536a79;
+    --bg-secondary: #36454F;
+}
+
+body {
+    color: var(--primary);
+    background: var(--bg-primary);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* grid-template-columns: fit-content(100px) 150px 150px 150px; */
+
+    padding: 0.5em;
+    border: 10px solid;
+}
+
+.grid-item {
+    display: grid;
+    place-content: center;
+    color: var(--bg-secondary);
+    background: var(--primary);
+    padding: 0.5em;
+}

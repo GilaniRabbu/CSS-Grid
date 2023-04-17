@@ -1,0 +1,61 @@
+:root {
+    --primary: #90EE90;
+    --bg-primary: #536a79;
+    --bg-secondary: #36454F;
+}
+
+body {
+    color: var(--primary);
+    background: var(--bg-primary);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.grid-container {
+    padding: 0.5em;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "☎️ ☎️ ☎️ 📱 📱 📱"
+        "☎️ ☎️ ☎️ 📱 📱 📱"
+        "☎️ ☎️ ☎️ 📱 📱 📱";
+}
+
+.grid-item {
+    display: grid;
+    place-content: center;
+    color: var(--bg-secondary);
+    background: var(--primary);
+    padding: 0.5em;
+}
+
+.grid-item1 {
+    grid-area: ☎️;
+}
+
+.grid-item14 {
+    grid-column: 📱-start / 📱-end;
+    grid-row: 📱-end;
+}
+
+.grid-item16 {
+    grid-row: ☎️-start / ☎️-end;
+}
+
+.grid-item2 {
+    grid-column: span 2;
+}
+
+.grid-item28 {
+    grid-column: span 2;
+}
+
+.grid-item29 {
+    grid-column: 1 / -1;
+}
+
+.grid-item30 {
+    grid-column: ☎️-start / 📱-end;
+}

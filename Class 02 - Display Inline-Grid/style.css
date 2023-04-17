@@ -1,0 +1,28 @@
+:root {
+    --primary: #90EE90;
+    --bg-primary: #536a79;
+    --bg-secondary: #36454F;
+}
+
+body {
+    color: var(--primary);
+    background: var(--bg-primary);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--primary);
+    padding: 0.5em;
+}
+
+.grid-item {
+    color: var(--primary);
+    background: var(--bg-secondary);
+    border: 2px solid;
+    padding: 1em;
+}

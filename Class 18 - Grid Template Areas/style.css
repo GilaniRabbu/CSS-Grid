@@ -1,0 +1,54 @@
+:root {
+    --primary: #90EE90;
+    --bg-primary: #536a79;
+    --bg-secondary: #36454F;
+}
+
+body {
+    color: var(--primary);
+    background: var(--bg-primary);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.grid-container {
+    padding: 0.5em;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1.5fr 8fr 1.5fr;
+    grid-template-rows: auto 200px auto;
+    grid-template-areas:
+        "header header header"
+        "sidebar-1 content sidebar-2"
+        "footer footer footer";
+}
+
+.grid-item {
+    display: grid;
+    place-content: center;
+    color: var(--bg-secondary);
+    background: var(--primary);
+    padding: 0.5em;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar-1 {
+    grid-area: sidebar-1;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidebar-2 {
+    grid-area: sidebar-2;
+}
+
+.footer {
+    grid-area: footer;
+}
